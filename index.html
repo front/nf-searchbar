@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Searchbar Menu</title>
+    <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/foundation/4.2.3/css/foundation.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/layout.css" />
+    <link type="text/css" rel="stylesheet" href="./css/theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/nf-searchbar.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('a.showBar').searchBar('.nf-searchbar');
+      });
+    </script>
+    <style type="text/css">
+      a.showBar {
+        display: block;
+        float: right;
+        background-color: #888;
+        color: #fff;
+        padding: 10px;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form class="nf-searchbar" action="." method="get">
+        <div class="row">
+          <input type="text" name="q" placeholder="Enter search here...">
+          <input type="submit" value="">
+          <span class="nf-search-cancel"></span>
+        </div>
+      </form>
+    </section>
+    <div class="row">
+      <a class="showBar">Search</a>
+      <div id="post-content">
+        <h3>Det gode liv i Liverpool</h3>
+        <p>Eksos, kull, fattigdom og triste blikk. Mytene er mange, men akk så misvisende. Det er ikke mange byer i verden som har forandret seg så radikalt og raskt som Liverpool.
+          I dag glitrer Mersey i solskinnet, heisekranene har pakket sammen, industripipene hviler. Men ølet skummer og sangen runger fortsatt. Vi kan kjenne at vi og byen lever.
+          Liverpool er revitalisert, noe den blant annet kan takke statusen som Europeisk kulturby 2008 for. Det var en brekkstang for mange nye prosjekter. I dag fremstår Liverpool som en pulserende partyby, moderne glassbygg stirrer steilt mot himmelen - side om side med ærverdige gamle teglsteinsfasader fra en annen storhetstid. Kontrastene er enorme.</p>
+      </div>
+      <hr>
+      <small>This is the footer | Powered by Frontkom!</small>
+    </div>
+  <body>
+</html>
